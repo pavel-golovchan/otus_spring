@@ -14,5 +14,7 @@ public class Main {
         // Получите Person "Ivan"
         Person ivan = service.getByName("Ivan");
         System.out.println("name: " + ivan.getName() + " age: " + ivan.getAge());
+        //закроем контекст
+        context.close();
     }
 }
